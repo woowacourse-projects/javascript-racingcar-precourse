@@ -3,6 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <title>자동차 경주 게임</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script defer src="src/index.js"></script>
   </head>
   <body>
     <div id="app">
@@ -14,19 +16,20 @@
       </p>
       <div class="car-game-container">
         <div>
-          <input type="text" />
-          <button>확인</button>
+          <input id="car-names-input" type="text" />
+          <button id="car-names-submit">확인</button>
         </div>
         <div>
           <h4>시도할 횟수를 입력해주세요.</h4>
-          <input type="number" />
-          <button>확인</button>
+          <input id="racing-count-input" type="text" />
+          <button id="racing-count-submit">확인</button>
         </div>
       </div>
       <div>
         <h4>📄 실행 결과</h4>
+        <ul class="car-game-list"></ul>
+        <span class="car-game-winner">최종 우승자: </span>
       </div>
     </div>
-    <script type="module" src="src/index.js"></script>
   </body>
 </html>
